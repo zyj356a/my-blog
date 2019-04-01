@@ -38,7 +38,7 @@
                     @foreach($tags as $tag)
                         <tr>
                             <td>{{ $tag->tag }}</td>
-                            <td>{{ $tag->title }}}</td>
+                            <td>{{ $tag->title }}</td>
                             <td class="hidden-sm">{{ $tag->subtitle }}</td>
                             <td class="hidden-md">{{ $tag->page_image }}</td>
                             <td class="hidden-md">{{ $tag->meta_description }}</td>
