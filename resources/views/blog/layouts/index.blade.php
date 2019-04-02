@@ -34,7 +34,7 @@
                             Posted on {{ $post->published_at->format('Y-m-d') }}
                             @if($post->tags->count())
                                 in
-                                {!! join(',', $post->tagLinks()) !!}}
+                                {!! join(',', $post->tagLinks()) !!}
                             @endif
                         </p>
                     </div>
@@ -65,7 +65,7 @@
                             </a>
                         @endif
                         @if($posts->hasMorePages())
-                            <a href="{!! $posts->nextPageUrl() !!}}">
+                            <a href="{!! $posts->nextPageUrl() !!}">
                                 Older {{ $tag ? $tag->tag : '' }} Posts
                                 →
                             </a>

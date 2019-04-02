@@ -18,7 +18,7 @@
                     <div class="card-body">
                         @include('admin.partials.errors')
 
-                        <form action="/blog/public/admin/tag" role="form" method="POST">
+                        <form action="/admin/tag" role="form" method="POST">
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
                             <div class="form-group row">
                                 <label for="tag" class="col-md-3 col-form-label">标签</label>
