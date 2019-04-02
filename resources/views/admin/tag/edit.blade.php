@@ -20,7 +20,7 @@
                         @include('admin.partials.errors')
                         @include('admin.partials.success')
 
-                        <form action="/blog/public/admin/tag/{{ $id }}" role="form" method="POST">
+                        <form action="/admin/tag/{{ $id }}" role="form" method="POST">
                             <input type="hidden" name="_method" value="PUT">
                             <input type="hidden" name="id" value="{{ $id }}">
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -68,7 +68,7 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <form action="/blog/public/admin/tag/{{ $id }}" method="POST" role="form">
+                    <form action="/admin/tag/{{ $id }}" method="POST" role="form">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <input type="hidden" name="_method" value="DELETE">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
